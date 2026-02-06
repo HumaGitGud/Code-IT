@@ -1,0 +1,16 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.5.1
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: Gray.Ash@student.greenriver.edu
+author_name: Cache Us Outside
+has_ai_rules: false
+has_binder: false
+has_settings: false
+kind: frontend-and-server
+labextension_name: code-it
+project_short_description: An extension for The Littlest JupyterHub to facilitate
+    RTC peer-programming.
+python_name: code_it
+repository: https://github.com/HumaGitGud/Code-IT
+test: true
+

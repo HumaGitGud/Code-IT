@@ -147,12 +147,6 @@ c.Spawner.pre_spawn_hook = pre_spawn_hook
 sudo systemctl restart jupyterhub
 ```
 
-Verify:
-
-```bash
-sudo journalctl -u jupyterhub -n 40 --no-pager
-```
-
 ---
 
 ## Using the Collaboration Room

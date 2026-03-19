@@ -1,0 +1,42 @@
+{
+  "title": "TLJH 30-User Stress Test",
+  "timezone": "browser",
+  "refresh": "5s",
+  "schemaVersion": 38,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "JupyterHub Active Users & Servers",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "targets": [
+        { "expr": "sum(jupyterhub_active_users{period='24h'})", "legendFormat": "Active Users (24h)" },
+        { "expr": "sum(jupyterhub_running_servers)", "legendFormat": "Running Servers" }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "CPU Usage (%)",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "targets": [
+        { "expr": "100 - (avg(rate(node_cpu_seconds_total{mode='idle'}[1m])) * 100)", "legendFormat": "CPU Load" }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Memory Usage (%)",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
+      "targets": [
+        { "expr": "100 * (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes))", "legendFormat": "Memory Used" }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Network Traffic (Bytes/sec)",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "targets": [
+        { "expr": "rate(node_network_receive_bytes_total[1m])", "legendFormat": "Received" },
+        { "expr": "rate(node_network_transmit_bytes_total[1m])", "legendFormat": "Transmitted" }
+      ]
+    }
+  ]
+}

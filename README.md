@@ -11,7 +11,7 @@ A setup for The Littlest JupyterHub on a DigitalOcean VM to facilitate RTC peer-
 This project enables real-time collaborative programming in JupyterHub, allowing students to work together on code in the same notebook.
 
 ## Development Setup for TLJH
-- Follow TLJH-Setup.md for TLJH setup on DigitalOcean VM
+- Follow [TLJH-Setup.md](https://github.com/HumaGitGud/Code-IT/blob/main/TLJH-Setup.md) for TLJH setup on DigitalOcean VM
 
 ## Development Workflow
 

@@ -78,7 +78,7 @@ https://code-it.greenrivertech.net/user/bobby/lab
 ### 6. To generate and share workspaces for collaboration
 
 Navigate to home screen of TLJH app and press 'Generate a shared link' in JupyterHub notebook. Alternatively, 
-find a partners user name and insert it the link like so https://code-it.greenrivertech.net/user/<partner>/lab.
+find a partners user name and insert it the link like so https://code-it.greenrivertech.net/user/partner-name/lab.
 TLJH will ask for 'Authorization' after which you are the room and collaboration is live.
 
 ------------------------------------------------------------------------

@@ -26,7 +26,7 @@ DigitalOcean guide:
 https://tljh.jupyter.org/en/latest/install/digitalocean.html
 
 Note:
-If the VM is already provisioned, follow Step 6 onward in the official DigitalOcean guide.
+If the VM is already provisioned, follow Step 6 onward in the official DigitalOcean guide or run an install-script: setup.sh [here](https://github.com/HumaGitGud/Code-IT/blob/main/install-script/install-script.md)
 
 ### Bootstrap TLJH
 

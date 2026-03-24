@@ -13,8 +13,6 @@ This project enables real-time collaborative programming in JupyterHub, allowing
 ## Development Setup for TLJH
 - Follow [TLJH-Setup.md](https://github.com/HumaGitGud/Code-IT/blob/main/TLJH-Setup.md) for TLJH setup on DigitalOcean VM
 
-## Development Workflow
-
 ## Resources
 - [JupyterLab Extension Developer Guide](https://jupyterlab.readthedocs.io/en/stable/extension/extension_dev.html)
 - [TLJH Documentation](https://tljh.jupyter.org/)

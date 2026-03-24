@@ -68,12 +68,18 @@ sudo ./setup.sh <admin_user> <project_name> '"student1", "student2", "student3"'
 
 ### 4. Start collaboration server (admin only)
 
--   To access admin page and create/access users Go to:\
-    https://code-it.greenrivertech.net/hub/admin
+To access admin page and create/access users Go to:\
+https://code-it.greenrivertech.net/hub/admin
 
 ### 5. Students access shared workspace
 
 https://code-it.greenrivertech.net/user/bobby/lab
+
+### 6. To generate and share workspaces for collaboration
+
+Navigate to home screen of TLJH app and press 'Generate a shared link' in JupyterHub notebook. Alternatively, 
+find a partners user name and insert it the link like so https://code-it.greenrivertech.net/user/<partner>/lab.
+TLJH will ask for 'Authorization' after which you are the room and collaboration is live.
 
 ------------------------------------------------------------------------
 
@@ -181,6 +187,12 @@ sudo -E jupyter labextension develop --overwrite .
 sudo -E jupyter lab build
 sudo systemctl restart jupyterhub
 ```
+
+------------------------------------------------------------------------
+
+# Vulnerability
+
+In the current implementation, real-time collaboration (RTC) functionality requires users to have **admin-level privileges** in JupyterHub. This introduces a significant security concern, as it grants elevated permissions beyond what is necessary for standard users allowing potential unwanted security issues.
 
 ------------------------------------------------------------------------
 

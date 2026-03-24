@@ -68,14 +68,12 @@ sudo ./setup.sh <admin_user> <project_name> '"student1", "student2", "student3"'
 
 ### 4. Start collaboration server (admin only)
 
--   Go to:\
-    http://`<YOUR_SERVER_IP>`{=html}/hub/admin
--   Start the user:\
-    `<project_name>`{=html}-collab
+-   To access admin page and create/access users Go to:\
+    https://code-it.greenrivertech.net/hub/admin
 
 ### 5. Students access shared workspace
 
-http://`<YOUR_SERVER_IP>`{=html}/hub/user/`<project_name>`{=html}-collab/lab
+https://code-it.greenrivertech.net/user/bobby/lab
 
 ------------------------------------------------------------------------
 
@@ -186,7 +184,7 @@ sudo systemctl restart jupyterhub
 
 ------------------------------------------------------------------------
 
-# Resources
+# Resources for individual setup parts
 
 - [TLJH Setup](https://github.com/HumaGitGud/Code-IT/blob/main/TLJH-Setup.md)
 - [TLJH HTML Editor](https://github.com/HumaGitGud/Code-IT/blob/main/tljh-html-editor-config.md)
